@@ -1,0 +1,91 @@
+body {
+    background-image: url('./background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    font-weight: bold;
+    font-family: 'Rokkitt', serif;
+}
+
+.card {
+    position: relative;
+    width: 640px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+}
+
+.card__glassmorphism {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(110.62deg, rgba(255, 255, 255, 0.4) 1.85%, rgba(255, 255, 255, 0.1) 97.67%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: 1px solid rgba(169, 86, 172, 0.39);
+    z-index: -1;
+}
+
+.card__info {
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    z-index: 2;
+}
+
+.card__info--top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 40px;
+    align-items: center;
+}
+
+.card__info--top h1 {
+    color: white;
+    font-size: 48px;
+    max-width: 300px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card__info--bottom {
+    padding: 20px 40px;
+    position: absolute;
+    height: 120px;
+    width: calc(100% - 80px);
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    border-radius: 0 0 40px 40px;
+    background: linear-gradient(90.34deg, #1BC0B6 0.26%, #12C2E9 21.01%, #3F3CD9 52.1%, #84006F 99.73%);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.numbers small {
+    text-align: right;
+    font-size: 20px;
+}
+
+.numbers h1 {
+    margin: 0;
+    font-size: 44px;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
